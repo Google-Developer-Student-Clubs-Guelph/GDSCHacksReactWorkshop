@@ -5,7 +5,7 @@
   margin-inline: 2rem;
 }
 
-.btn {
+button {
   background-color: #166cdb;
   color: white;
   border: none;
@@ -15,7 +15,7 @@
   transition: background-color 0.2s ease-out;
 }
 
-.btn:hover {
+button:hover {
   background-color: #0d4b9e;
 }
 
@@ -47,13 +47,13 @@
   background-color: #e4e4e4;
 }
 
-.note-card .btn {
+.note-card button {
   background-color: #cc1821;
   margin-left: auto;
   margin-top: 2rem;
 }
 
-.note-card .btn:hover {
+.note-card button:hover {
   background-color: #a40f15;
 }
 

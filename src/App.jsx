@@ -1,5 +1,4 @@
 import './App.css'
-import Button from './components/Button'
 import NoteEditor from './NoteEditor'
 import { useEffect, useState } from 'react'
 
@@ -46,7 +45,7 @@ function App() {
         <>
           <div className='heading'>
             <h1>Notes App</h1>
-            <Button onClick={newNote}>Create New</Button>
+            <button onClick={newNote}>Create New</button>
           </div>
 
           <div className='note-container'>
@@ -57,10 +56,10 @@ function App() {
                   <div className='note-card' key={noteId} onClick={() => setSelectedNote(noteId)}>
                     <h2>{notes[noteId].name}</h2>
                     <p>{notes[noteId].content.slice(0, 100)}</p>
-                    <Button onClick={(e) => {
+                    <button onClick={(e) => {
                       e.stopPropagation();
                       deleteNote(noteId)
-                    }}>Delete</Button>
+                    }}>Delete</button>
                   </div>
                 )
               })

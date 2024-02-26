@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import Button from './components/Button'
 
 export default function NoteEditor(props) {
     const [name, setName] = useState('');
@@ -39,7 +38,6 @@ export default function NoteEditor(props) {
                 onNoteChange(e.target.value, content)
             }} />
             <textarea
-                name="content"
                 cols="30"
                 rows="10"
                 value={content}
@@ -48,7 +46,7 @@ export default function NoteEditor(props) {
                     onNoteChange(name, e.target.value)
                 }}
             ></textarea>
-            <Button onClick={props.onSave}>Save</Button>
+            <button onClick={props.onSave}>Save</button>
         </>
     )
 }
