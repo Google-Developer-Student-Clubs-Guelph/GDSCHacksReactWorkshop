@@ -12,6 +12,88 @@
    - Install Node.js and npm
    - npm - create-react-app
 
+> We'll be using a premade style sheet for the app. Here's the code for it:
+
+```css
+/* App.css */
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 2rem;
+}
+
+button {
+  background-color: #166cdb;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease-out;
+}
+
+button:hover {
+  background-color: #0d4b9e;
+}
+
+.note-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-inline: 2rem;
+}
+
+.note-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  padding: 0 2rem 2rem 2rem;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: box-shadow 0.2s ease-out, background-color 0.2s ease-out;
+}
+
+.note-card > * {
+  margin: 0.5rem 0 0 0;
+}
+
+.note-card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #e4e4e4;
+}
+
+.note-card button {
+  background-color: #cc1821;
+  margin-left: auto;
+  margin-top: 2rem;
+}
+
+.note-card button:hover {
+  background-color: #a40f15;
+}
+
+.editor {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 50rem;
+  margin-inline: auto;
+}
+
+.editor input,
+.editor textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+```
+
+<div style="page-break-after: always;"></div>
+
 3. **JSX: JavaScript**
    - Understanding JSX syntax
    - Embedding things in JSX (variables, functions)
@@ -45,6 +127,8 @@ function App() {
 export default App;
 ```
 
+<div style="page-break-after: always;"></div>
+
 4. **Components**
    - What are components?
    - Creating and using components
@@ -65,6 +149,8 @@ export default function NoteEditor() {
   );
 }
 ```
+
+<div style="page-break-after: always;"></div>
 
 5. **State Management and Props**
    - useState hook
@@ -123,6 +209,8 @@ export default function NoteEditor() {
     ...
 }
 ```
+
+<div style="page-break-after: always;"></div>
 
 6. **Handling Events**
    - Events in React
@@ -271,6 +359,8 @@ function App() {
   )
 }
 ```
+
+<div style="page-break-after: always;"></div>
 
 7. **Conditional Rendering**
 
@@ -524,6 +614,8 @@ export default function NoteEditor(props) {
   );
 }
 ```
+
+<div style="page-break-after: always;"></div>
 
 **Common Errors and Debugging**
 
