@@ -12,7 +12,7 @@ Clone URL: https://github.com/Google-Developer-Student-Clubs-Guelph/GDSCHacksRea
 2. **Setting Up the Development Environment**
 
    - Install Node.js and npm [Download here](https://nodejs.org/en/download)
-   - npm create vite@latest [More info here](https://vitejs.dev/guide/)
+   - Creating a new project `npm create vite@latest` [More info here](https://vitejs.dev/guide/)
 
 > We'll be using a premade style sheet for the app. Here's the code for it:
 
